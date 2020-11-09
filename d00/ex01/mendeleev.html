@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2018/6-armyresearch.jpg);
+            font-family: Arial;
+        }
+		.red {
+			background-color: #ee341d;
+		}
+
+		.blue {
+			background-color: #00c3e2;
+		}
+
+		.yellow {
+			background-color: #f0e22d;
+		}
+		.darkblue {
+			background-color: #1b74c6;
+		}
+
+		.dpink {
+			background-color: #cc47a2;
+		}
+		.purple {
+			background-color: #7247cc;
+		}
+
+		.orange {
+			background-color: #fe7600;
+		}
+		.green {
+			background-color: #5ead1c;
+		}
+		.lgreen {
+			background-color: #24e491;
+		}
+		.gblue {
+			background-color: #41607f;
+		}
+		.brown {
+			background-color: #b07826;
+		}
+		.grey {
+			background-color: #9b9b9b;
+		}
+		td {
+			border: 1px solid white;
+			position: relative;
+            border-radius: 4px;
+		}
+		h1, p {
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			
+		}
+		h1{
+			padding:15px;
+		}
+		td p:first-child {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+            font-weight: bold;
+            padding-left: 4px;
+            padding-bottom: 3px;
+		}
+
+		td p:last-child {
+			position: absolute;
+			bottom:0;
+			right: 0;
+            font-style:italic;
+            font-size: 12px;
+            padding-right: 4px;
+            padding-bottom: 3px;
+		}
+
+		td:empty {
+			border: none;
+		}
+        .at-num {
+			text-align: left;
+            border:0px;
+		}
+        .at-mass{
+			text-align: right;
+            border:0px;
+		}
+	</style>
+</head>
+<title>Mendeléyev</title>
+
+<body>
+    <h1 style="color: white">Mendeléyev Periodic Table</h1>
+	<table>
+		<tr>
+			<td class="lgreen">
+                <p>1</p>
+                <h1>He</h1> 
+				<p>1.0080</p>
+			</td>
+			<td colspan="16"></td>
+			<td class="blue">
+				<p>2</p>
+				<h1>He</h1>
+				<p>4.002602</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="red">
+				<p>3</p>
+				<h1>Li</h1>
+				<p>6.9395</p>
+			</td>
+			<td class="orange">
+				<p>4</p>
+				<h1>Be</h1>
+				<p>9.0122</p>
+			</td>
+			<td colspan="10" class="none"></td>
+			<td class="brown">
+				<p>5</p>
+				<h1>B</h1>
+				<p>10.8135</p>
+			</td>
+			<td class="green">
+				<p>6</p>
+				<h1>C</h1>
+				<p>12.0106</p>
+			</td>
+			<td class="green">
+				<p>7</p>
+				<h1>N</h1>
+				<p>14.0069</p>
+			</td>
+			<td class="green">
+				<p>8</p>
+				<h1>O</h1>
+				<p>15.9994</p>
+			</td>
+			<td class="yellow">
+				<p>9</p>
+				<h1>F</h1>
+				<p>18.9984</p>
+			</td>
+			<td class="blue">
+				<p>10</p>
+				<h1>Ne</h1>
+				<p>20.1797</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="red">
+				<p>11</p>
+				<h1>Na</h1>
+				<p>22.9898</p>
+			</td>
+			<td class="orange">
+				<p>12</p>
+				<h1>Mg</h1>
+				<p>24.3055</p>
+			</td>
+			<td colspan="10" class="none"></td>
+			<td class="gblue">
+				<p>13</p>
+				<h1>Al</h1>
+				<p>26.9815</p>
+			</td>
+			<td class="brown">
+				<p>14</p>
+				<h1>Si</h1>
+				<p>28.0850</p>
+			</td>
+			<td class="green">
+				<p>15</p>
+				<h1>P</h1>
+				<p>30.9738</p>
+			</td>
+			<td class="green">
+				<p>16</p>
+				<h1>S</h1>
+				<p>32.0675</p>
+			</td>
+			<td class="yellow">
+				<p>17</p>
+				<h1>Cl</h1>
+				<p>35.4515</p>
+			</td>
+			<td class="blue">
+				<p>18</p>
+				<h1>Ar</h1>
+				<p>39.9480</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="red">
+				<p>19</p>
+				<h1>K</h1>
+				<p>39.0983</p>
+			</td>
+			<td class="orange">
+				<p>20</p>
+				<h1>Ca</h1>
+				<p>40.0780</p>
+			</td>
+			<td class="darkblue">
+				<p>21</p>
+				<h1>Sc</h1>
+				<p>44.9559</p>
+			</td>
+			<td class="darkblue">
+				<p>22</p>
+				<h1>Ti</h1>
+				<p>47.8670</p>
+			</td>
+			<td class="darkblue">
+				<p>23</p>
+				<h1>V</h1>
+				<p>50.9415</p>
+			</td>
+			<td class="darkblue">
+				<p>24</p>
+				<h1>Cr</h1>
+				<p>51.9961</p>
+			</td>
+			<td class="darkblue">
+				<p>25</p>
+				<h1>Mn</h1>
+				<p>54.9380</p>
+			</td>
+			<td class="darkblue">
+				<p>26</p>
+				<h1>Fe</h1>
+				<p>55.8450</p>
+			</td>
+			<td class="darkblue">
+				<p>27</p>
+				<h1>Co</h1>
+				<p>58.9332</p>
+			</td>
+			<td class="darkblue">
+				<p>28</p>
+				<h1>Ni</h1>
+				<p>58.6934</p>
+			</td>
+			<td class="darkblue">
+				<p>29</p>
+				<h1>Cu</h1>
+				<p>63.5460</p>
+			</td>
+			<td class="darkblue">
+				<p>30</p>
+				<h1>Zn</h1>
+				<p>65.3800</p>
+			</td>
+			<td class="gblue">
+				<p>31</p>
+				<h1>Ga</h1>
+				<p>69.7230</p>
+			</td>
+			<td class="brown">
+				<p>32</p>
+				<h1>Ge</h1>
+				<p>72.6300</p>
+			</td>
+			<td class="brown">
+				<p>33</p>
+				<h1>As</h1>
+				<p>74.9216</p>
+			</td>
+			<td class="green">
+				<p>34</p>
+				<h1>Se</h1>
+				<p>78.9710</p>
+			</td>
+			<td class="yellow">
+				<p>35</p>
+				<h1>Br</h1>
+				<p>79.9040</p>
+			</td>
+			<td class="blue">
+				<p>36</p>
+				<h1>Kr</h1>
+				<p>83.7980</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="red">
+				<p>37</p>
+				<h1>Rb</h1>
+				<p>85.4678</p>
+			</td>
+			<td class="orange">
+				<p>38</p>
+				<h1>Sr</h1>
+				<p>87.6200</p>
+			</td>
+			<td class="darkblue">
+				<p>39</p>
+				<h1>Y</h1>
+				<p>88.9058</p>
+			</td>
+			<td class="darkblue">
+				<p>40</p>
+				<h1>Zr</h1>
+				<p>91.2240</p>
+			</td>
+			<td class="darkblue">
+				<p>41</p>
+				<h1>Nb</h1>
+				<p>92.9063</p>
+			</td>
+			<td class="darkblue">
+				<p>42</p>
+				<h1>Mo</h1>
+				<p>95.9500</p>
+			</td>
+			<td class="darkblue">
+				<p>43</p>
+				<h1>Tc</h1>
+				<p>98</p>
+			</td>
+			<td class="darkblue">
+				<p>44</p>
+				<h1>Ru</h1>
+				<p>101.0700</p>
+			</td>
+			<td class="darkblue">
+				<p>45</p>
+				<h1>Rh</h1>
+				<p>102.9055</p>
+			</td>
+			<td class="darkblue">
+				<p>46</p>
+				<h1>Pd</h1>
+				<p>106.4200</p>
+			</td>
+			<td class="darkblue">
+				<p>47</p>
+				<h1>Ag</h1>
+				<p>107.8682</p>
+			</td>
+			<td class="darkblue">
+				<p>48</p>
+				<h1>Cd</h1>
+				<p>112.4140</p>
+			</td>
+			<td class="gblue">
+				<p>49</p>
+				<h1>In</h1>
+				<p>114.8180</p>
+			</td>
+			<td class="gblue">
+				<p>50</p>
+				<h1>Sn</h1>
+				<p>118.7100</p>
+			</td>
+			<td class="brown">
+				<p>51</p>
+				<h1>Sb</h1>
+				<p>121.7600</p>
+			</td>
+			<td class="brown">
+				<p>52</p>
+				<h1>Te</h1>
+				<p>127.6000</p>
+			</td>
+			<td class="yellow">
+				<p>53</p>
+				<h1>I</h1>
+				<p>126.9045</p>
+			</td>
+			<td class="blue">
+				<p>54</p>
+				<h1>Xe</h1>
+				<p>131.2930</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="red">
+				<p>55</p>
+				<h1>Cs</h1>
+				<p>132.9055</p>
+			</td>
+			<td class="orange">
+				<p>56</p>
+				<h1>Ba</h1>
+				<p>137.3270</p>
+			</td>
+			<td class="purple">
+				<p style="text-align: center">57-71</p>
+				<h1>*</h1>
+			</td>
+			<td class="darkblue">
+				<p>72</p>
+				<h1>Hf</h1>
+				<p>178.4900</p>
+			</td>
+			<td class="darkblue">
+				<p>73</p>
+				<h1>Ta</h1>
+				<p>180.9479</p>
+			</td>
+			<td class="darkblue">
+				<p>74</p>
+				<h1>W</h1>
+				<p>183.8400</p>
+			</td>
+			<td class="darkblue">
+				<p>75</p>
+				<h1>Re</h1>
+				<p>186.2070</p>
+			</td>
+			<td class="darkblue">
+				<p>76</p>
+				<h1>Os</h1>
+				<p>190.2300</p>
+			</td>
+			<td class="darkblue">
+				<p>77</p>
+				<h1>Ir</h1>
+				<p>192.2170</p>
+			</td>
+			<td class="darkblue">
+				<p>78</p>
+				<h1>Pt</h1>
+				<p>195.0840</p>
+			</td>
+			<td class="darkblue">
+				<p>79</p>
+				<h1>Au</h1>
+				<p>196.9666</p>
+			</td>
+			<td class="gblue">
+				<p>80</p>
+				<h1>Hg</h1>
+				<p>200.5920</p>
+			</td>
+			<td class="gblue">
+				<p>81</p>
+				<h1>Tl</h1>
+				<p>204.3835</p>
+			</td>
+			<td class="gblue">
+				<p>82</p>
+				<h1>Pb</h1>
+				<p>207.2000</p>
+			</td>
+			<td class="gblue">
+				<p>83</p>
+				<h1>Bi</h1>
+				<p>208.9804</p>
+			</td>
+			<td class="brown">
+				<p>84</p>
+				<h1>Po</h1>
+				<p>209</p>
+			</td>
+			<td class="yellow">
+				<p>85</p>
+				<h1>At</h1>
+				<p>210</p>
+			</td>
+			<td class="blue">
+				<p>86</p>
+				<h1>Rn</h1>
+				<p>222</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="red">
+				<p>87</p>
+				<h1>Fr</h1>
+				<p>223</p>
+			</td>
+			<td class="orange">
+				<p>88</p>
+				<h1>Ra</h1>
+				<p>226</p>
+			</td>
+			<td class="dpink">
+				<p style="text-align: center">89-103</p>
+				<h1>**</h1>
+			</td>
+			<td class="darkblue">
+				<p>104</p>
+				<h1>Rf</h1>
+				<p>267</p>
+			</td>
+			<td class="darkblue">
+				<p>105</p>
+				<h1>Db</h1>
+				<p>268</p>
+			</td>
+			<td class="darkblue">
+				<p>106</p>
+				<h1>Sg</h1>
+				<p>269</p>
+			</td>
+			<td class="darkblue">
+				<p>107</p>
+				<h1>Bh</h1>
+				<p>270</p>
+			</td>
+			<td class="darkblue">
+				<p>108</p>
+				<h1>Hs</h1>
+				<p>277</p>
+			</td>
+			<td class="grey">
+				<p>109</p>
+				<h1>Mt</h1>
+				<p>278</p>
+			</td>
+			<td class="grey">
+				<p>110</p>
+				<h1>Ds</h1>
+				<p>281</p>
+			</td>
+			<td class="grey">
+				<p>111</p>
+				<h1>Rg</h1>
+				<p>282</p>
+			</td>
+			<td class="darkblue">
+				<p>112</p>
+				<h1>Cn</h1>
+				<p>285</p>
+			</td>
+			<td class="grey">
+				<p>113</p>
+				<h1>Nh</h1>
+				<p>286</p>
+			</td>
+			<td class="gblue">
+				<p>114</p>
+				<h1>Fl</h1>
+				<p>289</p>
+			</td>
+			<td class="grey">
+				<p>115</p>
+				<h1>Mc</h1>
+				<p>289</p>
+			</td>
+			<td class="grey">
+				<p>116</p>
+				<h1>Lv</h1>
+				<p>293</p>
+			</td>
+			<td class="grey">
+				<p>117</p>
+				<h1>Ts</h1>
+				<p>294</p>
+			</td>
+			<td class="grey">
+				<p>118</p>
+				<h1>Og</h1>
+				<p>294</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+			<td class="purple">
+				<p>57</p>
+				<h1>La</h1>
+				<p>138.9055</p>
+			</td>
+			<td class="purple">
+				<p>58</p>
+				<h1>Ce</h1>
+				<p>140.1160</p>
+			</td>
+			<td class="purple">
+				<p>59</p>
+				<h1>Pr</h1>
+				<p>140.9077</p>
+			</td>
+			<td class="purple">
+				<p>60</p>
+				<h1>Nd</h1>
+				<p>144.2420</p>
+			</td>
+			<td class="purple">
+				<p>61</p>
+				<h1>Pm</h1>
+				<p>145</p>
+			</td>
+			<td class="purple">
+				<p>62</p>
+				<h1>Sm</h1>
+				<p>150.3600</p>
+			</td>
+			<td class="purple">
+				<p>63</p>
+				<h1>Eu</h1>
+				<p>151.9640</p>
+			</td>
+			<td class="purple">
+				<p>64</p>
+				<h1>Gd</h1>
+				<p>157.2500</p>
+			</td>
+			<td class="purple">
+				<p>65</p>
+				<h1>Tb</h1>
+				<p>158.9254</p>
+			</td>
+			<td class="purple">
+				<p>66</p>
+				<h1>Dy</h1>
+				<p>162.5000</p>
+			</td>
+			<td class="purple">
+				<p>67</p>
+				<h1>Ho</h1>
+				<p>164.9303</p>
+			</td>
+			<td class="purple">
+				<p>68</p>
+				<h1>Er</h1>
+				<p>167.2590</p>
+			</td>
+			<td class="purple">
+				<p>69</p>
+				<h1>Tm</h1>
+				<p>168.9342</p>
+			</td>
+			<td class="purple">
+				<p>70</p>
+				<h1>Yb</h1>
+				<p>173.0450</p>
+			</td>
+			<td class="purple">
+				<p>71</p>
+				<h1>Lu</h1>
+				<p>174.9668</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+			<td class="dpink">
+				<p>89</p>
+				<h1>Ac</h1>
+				<p>227</p>
+			</td>
+			<td class="dpink">
+				<p>90</p>
+				<h1>Th</h1>
+				<p>232.0377</p>
+			</td>
+			<td class="dpink">
+				<p>91</p>
+				<h1>Pa</h1>
+				<p>231.0359</p>
+			</td>
+			<td class="dpink">
+				<p>92</p>
+				<h1>U</h1>
+				<p>238.0289</p>
+			</td>
+			<td class="dpink">
+				<p>93</p>
+				<h1>Np</h1>
+				<p>237</p>
+			</td>
+			<td class="dpink">
+				<p>94</p>
+				<h1>Pu</h1>
+				<p>244</p>
+			</td>
+			<td class="dpink">
+				<p>95</p>
+				<h1>Am</h1>
+				<p>243</p>
+			</td>
+			<td class="dpink">
+				<p>96</p>
+				<h1>Cm</h1>
+				<p>247</p>
+			</td>
+			<td class="dpink">
+				<p>97</p>
+				<h1>Bk</h1>
+				<p>247</p>
+			</td>
+			<td class="dpink">
+				<p>98</p>
+				<h1>Cf</h1>
+				<p>251</p>
+			</td>
+			<td class="dpink">
+				<p>99</p>
+				<h1>Es</h1>
+				<p>252</p>
+			</td>
+			<td class="dpink">
+				<p>100</p>
+				<h1>Fm</h1>
+				<p>257</p>
+			</td>
+			<td class="dpink">
+				<p>101</p>
+				<h1>Md</h1>
+				<p>258</p>
+			</td>
+			<td class="dpink">
+				<p>102</p>
+				<h1>No</h1>
+				<p>259</p>
+			</td>
+			<td class="dpink">
+				<p>103</p>
+				<h1>Lr</h1>
+				<p>266</p>
+			</td>
+
+		</tr>
+	</table>s
+</body>
+
+</html>
