@@ -9,3 +9,6 @@ basics.html page
 
 # ex01
 Mendeleyév periodic table page
+
+# ex02
+Day of 42 game page (copying exactly the image given using photoshop to measure)
