@@ -1,0 +1,79 @@
+body {
+    background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2018/6-armyresearch.jpg);
+    font-family: Arial;
+}
+.alk-metal {
+    background-color: #ee341d;
+}
+.noble {
+    background-color: #00c3e2;
+}
+.halogen {
+    background-color: #f0e22d;
+}
+.tr-metal {
+    background-color: #1b74c6;
+}
+.actinide {
+    background-color: #cc47a2;
+}
+.lanthanide {
+    background-color: #7247cc;
+}
+.earth-metal {
+    background-color: #fe7600;
+}
+.non-metal {
+    background-color: #5ead1c;
+}
+.post-metal {
+    background-color: #41607f;
+}
+.metalloid {
+    background-color: #b07826;
+}
+.unknown {
+    background-color: #9b9b9b;
+}
+td {
+    border: 1px solid white;
+    position: relative;
+    border-radius: 4px;
+}
+h1, p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    padding:15px;
+}
+td p:first-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-bottom: 3px;
+}
+td p:last-child {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    font-style:italic;
+    font-size: 12px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+}
+td:empty {
+    border: none;
+}
+.at-num {
+    text-align: left;
+    border:0px;
+}
+.at-mass{
+    text-align: right;
+    border:0px;
+}
