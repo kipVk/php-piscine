@@ -1,0 +1,84 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+body {
+	background-color: #4F4F4F;
+}
+header {
+	display: block;
+	position: relative;
+}
+.box {
+    background-color: #8F8F8F;
+	margin: 16px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+.sides, .cluster{
+	display: inline-block;
+	vertical-align: top;
+}
+.sides {width: 12.5%;}
+.cluster {width: 75%;}
+.container {
+    width: 1360px;
+    position: relative;
+	margin: auto;
+}
+.col-right {min-height: 480px;}
+.side-boxes{padding: 0 24px;}
+.img-dotft {height: 96px;}
+.img-glass {
+	position: absolute;
+	right: 24px;
+	top: 8px;
+	height: 128px; 
+}
+.img-reload {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	width: 16px;
+}
+.img-close {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	width: 16px;
+}
+.img-full {width: 100%;}
+.img-icon {
+	display: block;
+	margin: 16px;
+	width: 64px;
+}
+.img-wall {
+	width: 100%;
+	height: 64px;
+}
+.borders {
+	border: 8px solid red;
+	border-radius: 8px;
+}
+.dialog {
+	position: absolute;
+	bottom: -80px;
+	left: 16px;
+	width: 400px;
+	padding: 16px 16px 48px 16px;
+	background-color: #8F8;
+	border-radius: 8px;
+	box-shadow: 8px 8px 8px black;
+}
+.entr {font-size: 32px;}
+.text-sdw {text-shadow: -4px 4px 4px red;}
+.text-it {font-style: italic;}
+.input-text {width: 320px;}
