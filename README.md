@@ -57,3 +57,11 @@ Does operations. It specifically says do not check for errors. I acknowledge tha
 
 # ex11
 Same as 10 but it all goes in one argument. Syntax error is thrown if the string is not the expected number operand number.
+
+# ex12
+Search a key on a parsed string and show the value
+
+# php-d02
+
+# ex00
+Remove spaces and tabs
