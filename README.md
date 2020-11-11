@@ -65,3 +65,6 @@ Search a key on a parsed string and show the value
 
 # ex00
 Remove spaces and tabs
+
+# ex01
+Translating months and weekdays to get the timestamp since epoc (0)
