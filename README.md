@@ -18,3 +18,42 @@ Responsive Mendeléyev periodic table
 
 # ex04
 Dropdowns menu exercise
+
+# php-d01
+PHP piscine day 00
+
+# ex00
+hellow world
+
+# ex01
+paint 1000 X
+
+# ex02
+Is odd or even
+
+# ex03
+ft_split function
+
+# ex04
+Print parameters
+
+# ex05
+Removes spaces at begining, end and extra in the middle
+
+# ex06
+Prints all words in all arguments sorted
+
+# ex07
+Place the first word at the end. Only first argument.
+
+# ex08
+Check if array is sorted
+
+# ex09
+Prints all words in all arguments but sorted in a different way
+
+# ex10
+Does operations. It specifically says do not check for errors. I acknowledge that the program doesn't work with any other arguments than int operand int.
+
+# ex11
+Same as 10 but it all goes in one argument. Syntax error is thrown if the string is not the expected number operand number.
