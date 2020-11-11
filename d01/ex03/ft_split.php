@@ -3,7 +3,7 @@
 	{
 		$arr = preg_split("/ +/", trim($str));
 		sort($arr);
-		if (!count($arr) || !$arr[0])
+		if (empty($arr))
 			return (NULL);
 		return ($arr);
 	}

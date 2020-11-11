@@ -3,7 +3,7 @@
     function ft_split($str)
 	{
         $arr = preg_split("/ +/", trim($str));
-		if (!count($arr) || !$arr[0])
+		if (empty($arr))
 			return (NULL);
 		return ($arr);
     }
