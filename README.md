@@ -68,3 +68,6 @@ Remove spaces and tabs
 
 # ex01
 Translating months and weekdays to get the timestamp since epoc (0)
+
+# ex02
+Read html page line by line, match the <a....> and the tags that identify the text to capitalize, and it does so.
