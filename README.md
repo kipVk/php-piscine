@@ -98,3 +98,7 @@ unpacks this array:
 
     if ($unpack['unk'] == 7)
     I had to add this because there was 2 extra entries captured at the begining which unk value was 10 and nothing, that were not shown by who, so this was a way to filter those
+
+# ex04
+Get all photos under the tag IMG from a parsed web.
+This was a total pain since it has to be done with curl instead of other parser that are a lot better.
