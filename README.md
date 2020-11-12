@@ -115,6 +115,21 @@ phpinfo
 Print all variables parsed on an url
 
 # ex03
+Create, get and delete cookies
+
+# ex04 
 Show plain text
 
+# ex05 
+Read image with right Content-Type
 
+# ex06
+Show an image if the right user and password is introduced, and show error if not.
+I decided to add users in a dictionary, as some webs would have them on data bases. Then I initially had array_key_exists to check if the parsed name exists as a key in the dictionary, but:
+isset() is faster, but it's not the same as array_key_exists().
+
+array_key_exists() purely checks if the key exists, even if the value is NULL.
+
+Whereas isset() will return false if the key exist and value is NULL.
+
+So, if the name would be empty and there would be an empty key, it would enter. Decided to use isset. Also I print first <html><body> and then again in the end, so the connection is open until the printing is done, as it shows in the pdf.
