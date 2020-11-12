@@ -102,3 +102,19 @@ unpacks this array:
 # ex04
 Get all photos under the tag IMG from a parsed web.
 This was a total pain since it has to be done with curl instead of other parser that are a lot better.
+
+# php-d03
+
+# ex00
+Just installing a software.
+
+# ex01
+phpinfo
+
+# ex02
+Print all variables parsed on an url
+
+# ex03
+Show plain text
+
+
