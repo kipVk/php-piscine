@@ -138,7 +138,6 @@ So, if the name would be empty and there would be an empty key, it would enter. 
 
 # ex00
 Create a page with a form to create username and password.
-Used single quotes even though in the example is double quotes as i'm trying to use double quotes onyl when I need things to be interpreted and single quotes when it's just literal strings.
 
 # ex01
-
+Create an account
