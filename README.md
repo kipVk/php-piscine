@@ -133,3 +133,12 @@ array_key_exists() purely checks if the key exists, even if the value is NULL.
 Whereas isset() will return false if the key exist and value is NULL.
 
 So, if the name would be empty and there would be an empty key, it would enter. Decided to use isset. Also I print first <html><body> and then again in the end, so the connection is open until the printing is done, as it shows in the pdf.
+
+# php-d04
+
+# ex00
+Create a page with a form to create username and password.
+Used single quotes even though in the example is double quotes as i'm trying to use double quotes onyl when I need things to be interpreted and single quotes when it's just literal strings.
+
+# ex01
+
