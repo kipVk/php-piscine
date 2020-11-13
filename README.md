@@ -141,3 +141,5 @@ Create a page with a form to create username and password.
 
 # ex01
 Create an account
+I wanted to use Argon2id as the hashing algorithm but it's not available on the function hash(), only on password_has() which WE CANNOT USE ON THE ASSIGNMENT...
+So I will go with whirlpool as it was suggested and this is just educational.
