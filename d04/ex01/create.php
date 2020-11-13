@@ -10,7 +10,6 @@
         file_put_contents($pwd_file, serialize($u_db));
     }
 
-    session_start();
     $pwd_file = "../private/passwd";
     $login    = $_REQUEST["login"];
     $pwd      = $_REQUEST["passwd"];

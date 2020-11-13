@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Create a user account</title>
+	<title>Create new user</title>
 </head>
 <body>
 	<form action="create.php" method="POST">
