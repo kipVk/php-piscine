@@ -1,10 +1,12 @@
 <?php
 	require_once("auth.php");
 	session_start();
-	$pwd_file = "../private/passwd";
-	$login = $_REQUEST["login"];
-	$pwd= $_REQUEST["passwd"];
-	$submit= $_REQUEST["submit"];
+
+	$pwd_file 	= "../private/passwd";
+	$login 		= $_REQUEST["login"];
+	$pwd		= $_REQUEST["passwd"];
+	$submit		= $_REQUEST["submit"];
+
 	if ($login && $pwd && auth($login, $pwd))
 		$_SESSION["loggued_on_user"] = $login;
 	else
@@ -12,10 +14,9 @@
 		$_SESSION["loggued_on_user"] = "";
 		header("Location: index.html");
 		echo "ERROR\n";
-		return;
+		return ;
 	}
 ?>
-
 <!DOCTYPE html>
 <html>
 	<head>

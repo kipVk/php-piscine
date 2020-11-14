@@ -1,6 +1,5 @@
 
 <?php
-
 	session_start();
 	function ft_get_chats($chat_file)
 	{
@@ -18,7 +17,7 @@
 	if ($_SESSION["loggued_on_user"] === "")
 	{
 		echo "ERROR\n";
-		die();
+		return ;
 	}
 	if (isset($msg))
 	{
@@ -31,7 +30,7 @@
 		$chats[] = $msg;
 		if (file_put_contents($chat_file, serialize($chats), LOCK_EX) === FALSE)
 		{
-			header("Location: .");
+			header("Location: index.html");
 			echo "ERROR\n";
 		}
 	}
