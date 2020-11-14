@@ -12,7 +12,7 @@
 		{
 			echo "ERROR\n";
 			return ;
-		}
+			}
 		else
 		{
 			$u_db = unserialize(file_get_contents($pwd_file));
@@ -30,6 +30,7 @@
 						{
 							$u_db[$key]["passwd"] = hash("whirlpool", $newpw, false);
 							file_put_contents($pwd_file, serialize($u_db));
+							header("Location: index.html");
 							echo "OK\n";
 							return ;
 						}
@@ -48,6 +49,6 @@
 			}
 		}
 	}
-	echo "ERROR\n";
+	echo "ERROR1\n";
 	return;
 ?>
