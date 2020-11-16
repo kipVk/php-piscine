@@ -1,1 +1,1 @@
-create database db_rcenamor;
+CREATE DATABASE db_rcenamor;

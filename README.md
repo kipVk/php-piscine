@@ -152,3 +152,10 @@ Authentication various scripts
 
 # ex04
 42 chat room with multiusers.
+
+# php-d05
+
+All MySQL queries
+
+To import the base_student.sql to our database:
+        mysql -u username -p database_name < file.sql
