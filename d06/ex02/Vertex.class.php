@@ -60,5 +60,58 @@
 				echo $this->__toString() . " destructed" . PHP_EOL;
 			}
 		}
+
+		# The vector needs to access the coordinates of the vertex which are private
+		# so we need to modify ex01 Vertex.class to add getters and setters.
+
+		public function getX()
+		{
+			return $this->_x;
+		}
+
+		public function getY()
+		{
+			return $this->_y;
+		}
+
+		public function getZ()
+		{
+			return $this->_z;
+		}
+
+		public function getW()
+		{
+			return $this->_w;
+		}
+
+		public function getColor()
+		{
+			return $this->_color;
+		}
+
+		public function setX($newx)
+		{
+			$this->_x = $newx;
+		}
+
+		public function setY($newy)
+		{
+			$this->_y = $newy;
+		}
+
+		public function setZ($newz)
+		{
+			$this->_z = $newz;
+		}
+
+		public function setW($neww)
+		{
+			$this->_w = $neww;
+		}
+
+		public function setColor(Color $newcolor)
+		{
+			$this->_color = $newcolor;
+		}
 	}
 ?>

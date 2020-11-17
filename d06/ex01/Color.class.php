@@ -32,14 +32,16 @@
 			$this->red = intval($color['red']);
 			$this->green = intval($color['green']);
 			$this->blue = intval($color['blue']);
-			if (self::$verbose) {
+			if (self::$verbose)
+			{
 				echo $this->__toString() . " constructed." . PHP_EOL;
 			}
 		}
 
 		public function __destruct()
 		{
-			if (self::$verbose) {
+			if (self::$verbose)
+			{
 				echo $this->__toString() . " destructed." . PHP_EOL;
 			}
 		}
@@ -49,8 +51,7 @@
 			return new Color([
 				'red' => $this->red + $color->red,
 				'green' => $this->green + $color->green,
-				'blue' => $this->blue + $color->blue
-			]);
+				'blue' => $this->blue + $color->blue]);
 		}
 
 		public function sub(Color $color)
@@ -58,8 +59,7 @@
 			return new Color([
 				'red' => $this->red - $color->red,
 				'green' => $this->green - $color->green,
-				'blue' => $this->blue - $color->blue
-			]);
+				'blue' => $this->blue - $color->blue]);
 		}
 
 		public function mult($factor)
@@ -67,8 +67,7 @@
 			return new Color([
 				'red' => $this->red * $factor,
 				'green' => $this->green * $factor,
-				'blue' => $this->blue * $factor
-			]);
+				'blue' => $this->blue * $factor]);
 		}
 	}
 ?>
