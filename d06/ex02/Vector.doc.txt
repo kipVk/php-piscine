@@ -36,5 +36,10 @@ Public methods:
 	between both vectors.
 - Vector crossProduct( Vector $rhs ) : returns the cross
 	multiplication of both vectors (right-hand mark!)
+- getX: gets x attribute
+- getY: gets y attribute
+- getZ: gets z attribute
+- getW: gets w attribute
+
 
 ---------------------------------------------------------------------- Vector ->

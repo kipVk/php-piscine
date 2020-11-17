@@ -61,8 +61,30 @@
 			}
 		}
 
-		# The vector needs to access the coordinates of the vertex which are private
-		# so we need to modify ex01 Vertex.class to add getters and setters.
+		public function setX($newx)
+		{
+			$this->_x = $newx;
+		}
+
+		public function setY($newy)
+		{
+			$this->_y = $newy;
+		}
+
+		public function setZ($newz)
+		{
+			$this->_z = $newz;
+		}
+
+		public function setW($neww)
+		{
+			$this->_w = $neww;
+		}
+
+		public function setColor(Color $newcolor)
+		{
+			$this->_color = $newcolor;
+		}
 
 		public function getX()
 		{
@@ -87,31 +109,6 @@
 		public function getColor()
 		{
 			return $this->_color;
-		}
-
-		public function setX($newx)
-		{
-			$this->_x = $newx;
-		}
-
-		public function setY($newy)
-		{
-			$this->_y = $newy;
-		}
-
-		public function setZ($newz)
-		{
-			$this->_z = $newz;
-		}
-
-		public function setW($neww)
-		{
-			$this->_w = $neww;
-		}
-
-		public function setColor(Color $newcolor)
-		{
-			$this->_color = $newcolor;
 		}
 	}
 ?>

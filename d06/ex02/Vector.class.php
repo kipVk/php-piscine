@@ -20,8 +20,8 @@
 
 		public function __toString()
 		{
-			return "Vector( x: " . number_format($this->_x, 2, ".", "") .
-				", y: " . number_format($this->_y, 2, ".", "") .
+			return "Vector( x:" . number_format($this->_x, 2, ".", "") .
+				", y:" . number_format($this->_y, 2, ".", "") .
 				", z:" . number_format($this->_z, 2, ".", "") .
 				", w:" . number_format($this->_w, 2, ".", "") .
 				" )";
@@ -48,6 +48,26 @@
 			if (self::$verbose) {
 				echo $this->__toString() . " destructed" . PHP_EOL;
 			}
+		}
+
+		public function getX()
+		{
+			return $this->_x;
+		}
+
+		public function getY()
+		{
+			return $this->_y;
+		}
+
+		public function getZ()
+		{
+			return $this->_z;
+		}
+
+		public function getW()
+		{
+			return $this->_w;
 		}
 
 		public function magnitude()
@@ -106,6 +126,24 @@
 				+ $this->_z * $rhs->_z);
 		}
 
-
+		public function cos(Vector $rhs)
+		{
+			$mag1 = $this->magnitude();
+			$mag2 = $rhs->magnitude();
+			if ($mag1 == 1 || $mag2 == 1
+				|| $mag1 == 0 || $mag2 == 0)
+				return (0);
+			else
+				return ($this->dotProduct($rhs)
+						/ ($this->magnitude()* $rhs->magnitude()));
+		}
+		
+		public function crossProduct(Vector $rhs)
+		{
+			return new Vector(array('dest' => new Vertex([
+				'x' => $this->_y * $rhs->_z - $this->_z * $rhs->_y,
+				'y' => $this->_z * $rhs->_x - $this->_x * $rhs->_z,
+				'z' => $this->_x * $rhs->_y - $this->_y * $rhs->_x])));
+		}
 	}
 ?>

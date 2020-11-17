@@ -19,4 +19,19 @@ new Vertex(array('x' => 1.0, 'y' => 1.0, 'z' => 1.0));
 Or:
 new Vertex(array('x' => 1.0, 'y' => 1.0, 'z' => 1.0, 'w' => 1.0, 
 	'color' => $white));
+
+Public methods:
+- doc: shows documentation
+- getX: gets x attribute
+- getY: gets y attribute
+- getZ: gets z attribute
+- getW: gets w attribute
+- getColor: gets color attribute
+- setX: sets x attribute
+- setY: sets y attribute
+- setZ: sets z attribute
+- setW: sets w attribute
+- setColor: sets color attribute
+
+Verbose is available with Vertex::$verbose
 ---------------------------------------------------------------------- Vertex ->
