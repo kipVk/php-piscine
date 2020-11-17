@@ -167,3 +167,11 @@ OOP with PHP
 Get colors and operate on them
 https://stackoverflow.com/questions/4801366/convert-rgb-values-to-integer
 Made it match the result obtained by the main file on the resources
+
+# ex01
+Ceate a vertex with coordinates
+
+# ex02
+Create a vector with 2 vertex orig and dest. The vector needs to access
+the coordinates of the vertex which are private, so we need to modify
+ex01 Vertex.class to add getters and setters.
