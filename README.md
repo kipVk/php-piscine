@@ -159,3 +159,11 @@ All MySQL queries
 
 To import the base_student.sql to our database:
         mysql -u username -p database_name < file.sql
+
+# php-d06
+OOP with PHP
+
+# ex00
+Get colors and operate on them
+https://stackoverflow.com/questions/4801366/convert-rgb-values-to-integer
+Made it match the result obtained by the main file on the resources
