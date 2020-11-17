@@ -1,0 +1,46 @@
+
+<- Matrix ----------------------------------------------------------------------
+Matrix representation and operation with matrix and vectors.
+It expects an array with these keys:
+
+- ’preset’: the matrix type to, mandatory. The value must be one
+of the Class constants previoulsy defined.
+- ’scale’: the scale factor, mandatory when 'preset' is worth
+	SCALE.
+- ’angle’: the rotation angle in radians, mandatory when 'preset'
+is worth RX, RY or RZ.
+- ’vtc’: translation vector, mandatory when 'preset' is worth
+	TRANSLATION.
+- ’fov’: projection field of view in degrees mandatory when
+- 'preset' is worth PROJECTION.
+- ’ratio’: projected image ratio, mandatory when 'preset' is worth
+	PROJECTION.
+- ’near’: projection’s near clipping plane mandatory when 'preset'
+	is worth PROJECTION.
+- ’far’: projection’s far clipping plane mandatory when 'preset'
+	is worth PROJECTION.
+
+The array needs to define a preset from:
+IDENTITY, SCALE, RX, RY, RZ, TRANSLATION and PROJECTION.
+
+Depending on the selected preset, the other keys need to have 
+values as described above.
+
+Verbose available as Matrix::verbose
+
+It contains the following public methods:
+- doc: shows documentation
+- mult(Matrix $rhs): returns the multiplication of both matrices.
+- transformVertex(Vertex $vtx): returns a new vertex resulting from
+	the tranformation of the vertex by the matrix.
+---------------------------------------------------------------------- Matrix ->
+Let's start with an harmless identity matrix :
+Matrix IDENTITY instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 1.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 1.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 1.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 1.00
+
+Matrix instance destructed

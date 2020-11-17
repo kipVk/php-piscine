@@ -175,3 +175,9 @@ Ceate a vertex with coordinates
 Create a vector with 2 vertex orig and dest. The vector needs to access
 the coordinates of the vertex which are private, so we need to modify
 ex01 Vertex.class to add getters and setters.
+
+# ex03
+Matrixes everywhere. Passing a "preset" in the array to create the matrix
+we define in the construct the function that will be used to operate
+or build the matrix. Depending on the preset selected, we are expecting some
+or another keys in the array to be able to perform the operations.
