@@ -45,28 +45,28 @@ print( 'Do a barrel roll !' . PHP_EOL );
 $RZ = new Matrix( array( 'preset' => Matrix::RZ, 'angle' => 2 * M_PI ) );
 print( $RZ . PHP_EOL . PHP_EOL );
 
-// print( 'The bad guy now, the projection matrix : 3D to 2D !' . PHP_EOL );
-// print( 'The values are arbitray. We\'ll decipher them in the next exercice.' . PHP_EOL );
-// $P = new Matrix( array( 'preset' => Matrix::PROJECTION,
-// 						'fov' => 60,
-// 						'ratio' => 640/480,
-// 						'near' => 1.0,
-// 						'far' => -50.0 ) );
-// print( $P . PHP_EOL . PHP_EOL );
+print( 'The bad guy now, the projection matrix : 3D to 2D !' . PHP_EOL );
+print( 'The values are arbitray. We\'ll decipher them in the next exercice.' . PHP_EOL );
+$P = new Matrix( array( 'preset' => Matrix::PROJECTION,
+ 						'fov' => 60,
+ 						'ratio' => 640/480,
+ 						'near' => 1.0,
+ 						'far' => -50.0 ) );
+print( $P . PHP_EOL . PHP_EOL );
 
-// print( 'Matrices are so awesome, that they can be combined !' . PHP_EOL );
-// print( 'This is a model matrix that scales, then rotates around OY axis,' . PHP_EOL );
-// print( 'then rotates around OX axis and finally translates.' . PHP_EOL );
-// print( 'Please note the reverse operations order. It\'s not an error.' . PHP_EOL );
-// $M = $T->mult( $RX )->mult( $RY )->mult( $S );
-// print( $M . PHP_EOL . PHP_EOL );
+print( 'Matrices are so awesome, that they can be combined !' . PHP_EOL );
+print( 'This is a model matrix that scales, then rotates around OY axis,' . PHP_EOL );
+print( 'then rotates around OX axis and finally translates.' . PHP_EOL );
+print( 'Please note the reverse operations order. It\'s not an error.' . PHP_EOL );
+$M = $T->mult( $RX )->mult( $RY )->mult( $S );
+print( $M . PHP_EOL . PHP_EOL );
 
-// print( 'What can you do with a matrix and a vertex ?' . PHP_EOL );
-// $vtxA = new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 0.0 ) );
-// print( $vtxA . PHP_EOL );
-// print( $M . PHP_EOL );
-// print( 'Transform the damn vertex !' . PHP_EOL );
-// $vtxB = $M->transformVertex( $vtxA );
-// print( $vtxB . PHP_EOL . PHP_EOL );
+print( 'What can you do with a matrix and a vertex ?' . PHP_EOL );
+$vtxA = new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 0.0 ) );
+print( $vtxA . PHP_EOL );
+print( $M . PHP_EOL );
+print( 'Transform the damn vertex !' . PHP_EOL );
+$vtxB = $M->transformVertex( $vtxA );
+print( $vtxB . PHP_EOL . PHP_EOL );
 
 ?>
