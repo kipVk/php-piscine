@@ -137,5 +137,18 @@
 			$this->_matrix[2][2] = 1;
 			$this->_matrix[3][3] = 1;
 		}
+
+		private function pProjection($info)
+		{
+			$persp = 1 / tan(($info['fov'] / 2 * M_PI / 180));
+			$this->_matrix[0][0] = $persp / $info['ratio'];
+			$this->_matrix[1][1] = $persp;
+			$this->_matrix[2][2] = (($info['near'] + $info['far'])
+				/ ($info['near'] - $info['far']));
+			$this->_matrix[2][3] = ((2 * $info['near'] * $info['far'])
+				/ ($info['near'] - $info['far']));
+			$this->_matrix[3][2] = -1;
+			$this->_matrix[3][3] = 0;
+		}
 	}
 ?>

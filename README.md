@@ -197,3 +197,13 @@ or another keys in the array to be able to perform the operations.
 https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/opengl-perspective-projection-matrix/
 
 https://en.wikipedia.org/wiki/Rotation_matrix#:~:text=Basic%20rotations,-A%20basic%20rotation&text=The%20following%20three%20basic%20rotation,clockwise%20rotation%20of%20the%20axes.)
+
+https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/building-basic-perspective-projection-matrix
+
+For the projection I used formulas on page 52 of:
+https://www.cs.umd.edu/~zwicker/courses/computergraphics/03_Projection.pdf
+
+Had to convert this to radians, since it was give in degrees. For that has to be multiplied by pi/180
+1 / tan($info['fov'] / 2); => 1 / tan(($info['fov'] / 2 * M_PI / 180));
+
+With this I obtained the right results!!
