@@ -172,5 +172,28 @@
 			$mresult->_matrix = $result;
 			return $mresult;
 		}
+
+		public function transformVertex($vtx)
+		{
+			$vertx = $vtx->getX() * $this->_matrix[0][0] +
+				$vtx->getY() * $this->_matrix[0][1] +
+				$vtx->getZ() * $this->_matrix[0][2] +
+				$vtx->getW() * $this->_matrix[0][3];
+			$verty = $vtx->getX() * $this->_matrix[1][0] +
+				$vtx->getY() * $this->_matrix[1][1] +
+				$vtx->getZ() * $this->_matrix[1][2] +
+				$vtx->getW() * $this->_matrix[1][3];
+			$vertz = $vtx->getX() * $this->_matrix[2][0] +
+				$vtx->getY() * $this->_matrix[2][1] +
+				$vtx->getZ() * $this->_matrix[2][2] +
+				$vtx->getW() * $this->_matrix[2][3];
+			$vertw = $vtx->getX() * $this->_matrix[3][0] +
+				$vtx->getY() * $this->_matrix[3][1] +
+				$vtx->getZ() * $this->_matrix[3][2] +
+				$vtx->getW() * $this->_matrix[3][3];
+			$new_vert = new Vertex(array('x' => $vertx, 'y' => $verty, 
+				'z' => $vertz, 'w' => $vertw));
+			return $new_vert;
+		}
 	}
 ?>
