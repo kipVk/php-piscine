@@ -1,0 +1,25 @@
+
+<- Render ----------------------------------------------------------------------
+Render images according to 3 modes: Vertex, Edge, Raster.
+The resulted image is a png file.
+
+The Render class constructor is expecting an array with the following keys:
+- ’width’: The generated image’s width, which is mandatory.
+- ’height’: The generated image’s height which is mandatory.
+- ’filename’: Filename in which the png image created will be
+	saved, which is mandatory.
+
+It has 3 constants, VERTEX, EDGE and RASTERIZE, used to select the mode.
+
+Verbose is available with Render::verbose
+
+It contains the following public methods:
+
+- void renderVertex( Vertex $screenVertex ) : Displays a ”screen” coordinates
+	vertex in the generated image (a pixel basically).
+- void renderTriangle( Triangle $triangle, $mode ) : Displays a ”screen”
+	coordinates triangle in the generated image according to the selected mode. The mode must be one of the
+	previoulsy defined Class constants.
+- void develop() : Save the png generated image on the hard drive using the
+	filename given to the constructor.
+---------------------------------------------------------------------- Render ->

@@ -1,0 +1,33 @@
+
+<- Camera ----------------------------------------------------------------------
+Camera class. The camera world position is a vertex. The camera world
+orientation with a rotation matrix towards where it looks at.
+It shows the 2D projection of the 3D representation of the objec defined by:
+Ratio, fov, near, far.
+
+The class constructor is expecting an array with the following keys:
+
+- ’origin’: The vertex positioning the camera in the world mark.
+	Thanks to this vertex, we can compute a vector and then a
+	translation matrix.
+- ’orientation’: Rotation matrix orienting the camera in the world
+	mark.
+- ’width’: Width in pixel of the desired image. Is used to compute
+	the ratio. Not compatible with the 'ratio' key.
+- ’height’: Height in pixel of the desired image. Is used to
+	compute the ratio. Not compatible with the 'ratio' key.
+- ’ratio’: Image’s ratio. Not compatible with the 'width' and
+- 'height' keys.
+- ’fov’ : The projected image’s field of view in in degree.
+- ’near’ : The near clipping plane.
+- ’far’ : The far clipping plane.
+
+Verbose is available as Camera::verbose
+
+Public methods:
+
+- doc: shows documentation of the class.
+- watchVertex(Vertex $worldVertex): Transforms ”world”
+	coordinates vertex into a ”screen” coordinates vertex (a
+	pixel basically). Returns a Vertex
+---------------------------------------------------------------------- Camera ->
