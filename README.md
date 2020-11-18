@@ -305,3 +305,10 @@ Tyrion.class.php inheriting from Lannister class in test.php file
 # ex01
 Make the Greyjoy function so that test1 prints and test2 gives fatal error. Test2 is accessing straight to an attribute of the class Euron, which extends Greyjoy, so making that attribute protected gets it not accessible out of Greyjoy.
 Euron has a proper function to get that value out, so test1 should work.
+
+# ex02
+Daenerys class is modyfying the value of the function resistsFire from the Targaryen class.
+
+# ex03
+An abstract class cannot be instantiated. Abstract methods on a class must be declared on the child. DrHouse class is not declaring al the abstract methods from House, so it will fail.
+
