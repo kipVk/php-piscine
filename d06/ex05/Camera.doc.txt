@@ -30,4 +30,6 @@ Public methods:
 - watchVertex(Vertex $worldVertex): Transforms ”world”
 	coordinates vertex into a ”screen” coordinates vertex (a
 	pixel basically). Returns a Vertex
+- watchMesh(array): Receives an array of triangles and applies watchVertex to
+	the 3 vertex of the triangle. Returns te same array with the transformations
 ---------------------------------------------------------------------- Camera ->

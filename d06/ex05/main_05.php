@@ -85,8 +85,8 @@ $origin = $cam->watchVertex( $origin );
 $repere = makeRepere();
 $repere = $S->transformMesh( $repere );
 $repere = $cam->watchMesh( $repere );
-// $renderer->renderMesh( $repere, Render::EDGE );
-// $renderer->renderVertex( $origin );
+//$renderer->renderMesh( $repere, Render::EDGE );
+//$renderer->renderVertex( $origin );
 
 
 // $cube = makeColoredCube( 0.0, 0.0, 0.0, 1.0 );

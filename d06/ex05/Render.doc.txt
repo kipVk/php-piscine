@@ -22,4 +22,8 @@ It contains the following public methods:
 	previoulsy defined Class constants.
 - void develop() : Save the png generated image on the hard drive using the
 	filename given to the constructor.
+- renderMesh($array, $mode): Gets an array of triangles and applies the render mode
+	parsed.
+- renderEdge (Vertex $a, Vertex $b): given two vertices it will draw the line
+	between them
 ---------------------------------------------------------------------- Render ->

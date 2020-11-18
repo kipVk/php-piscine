@@ -82,9 +82,15 @@
 			return ($vtx);
 		}
 
-		public function watchMesh()
+		public function watchMesh($mesh)
 		{
-			
+			foreach($mesh as $k => $triangle) {
+				$a = $this->watchVertex($triangle[0]);
+				$b = $this->watchVertex($triangle[1]);
+				$c = $this->watchVertex($triangle[2]);
+				$mesh[$k] = array($a, $b, $c);
+			}
+			return $mesh;
 		}
 	}
 ?>

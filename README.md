@@ -287,3 +287,12 @@ So we will need to add a transpose function to the Matrix Class.
 Generating images finally.
 
 Render and Triangle classes
+
+https://www.php.net/manual/en/function.imagecolorallocate.php
+https://www.php.net/manual/en/function.imagecreate.php
+https://www.geeksforgeeks.org/php-imagefilledpolygon-function/
+
+Specially this one was useful:
+http://programmerblog.net/manipulate-images-work-gd-library-in-php/
+
+Quit ex05 half way done. Not enough time for me to understand this and do it to the end well enough to match the given image. To get 0 points I'd rather move onto day07
