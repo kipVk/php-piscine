@@ -2,6 +2,7 @@
 
 	require_once 'Vertex.class.php';
 	require_once 'Vector.class.php';
+	require_once 'Triangle.class.php';
 
 	class Matrix
 	{
@@ -195,6 +196,29 @@
 			$new_vert = new Vertex(array('x' => $vertx, 'y' => $verty, 
 				'z' => $vertz, 'w' => $vertw));
 			return $new_vert;
+		}
+		
+		public function transpose()
+		{
+			$trans = new Matrix(array('preset' => Matrix::IDENTITY,
+				'noPrint' => TRUE));
+			foreach (range(0, 3) as $i)
+			{
+				foreach (range(0, 3) as $j)
+					$trans->_matrix[$i][$j] = $this->_matrix[$j][$i];
+			}
+			return $trans;
+		}
+
+		public function transformMesh($mesh)
+		{
+			$result = array();
+			foreach($mesh as $k => $triangle) {
+				$result[$k][0] = $this->transformVertex($triangle->getA());
+				$result[$k][1] = $this->transformVertex($triangle->getB());
+				$result[$k][2] = $this->transformVertex($triangle->getC());
+			}
+			return $result;
 		}
 	}
 ?>

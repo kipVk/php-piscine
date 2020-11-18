@@ -30,5 +30,20 @@
 			if (self::$verbose)
 				echo "Triangle instance destructed" . PHP_EOL;
 		}
+
+		public function getA()
+		{
+			return $this->_a;
+		}
+
+		public function getB()
+		{
+			return $this->_b;
+		}
+
+		public function getC()
+		{
+			return $this->_c;
+		}
 	}
 ?>

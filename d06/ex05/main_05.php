@@ -66,14 +66,16 @@ $RY = new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI_4 ) );
 $RX = new Matrix( array( 'preset' => Matrix::RX, 'angle' => M_PI_4 ) );
 
 $cam = new Camera( array( 'origin' => new Vertex( array( 'x' => 15.0, 'y' => 15.0, 'z' => 80.0 ) ),
-						  'orientation' => new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI ) ),
-						  'width' => 640,
-						  'height' => 480,
-						  'fov' => 60,
-						  'near' => 1.0,
-						  'far' => 100.0) );
+ 						  'orientation' => new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI ) ),
+ 						  'width' => 640,
+ 						  'height' => 480,
+ 						  'fov' => 60,
+ 						  'near' => 1.0,
+ 						  'far' => 100.0) );
 
-$renderer = new Render( 640, 480, 'pic.png' );
+$renderer = new Render(array('width' => 640,
+							 'height' => 480,
+							 'filename' => 'pic.png'));
 
 
 $origin = New Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
@@ -83,17 +85,17 @@ $origin = $cam->watchVertex( $origin );
 $repere = makeRepere();
 $repere = $S->transformMesh( $repere );
 $repere = $cam->watchMesh( $repere );
-$renderer->renderMesh( $repere, Render::EDGE );
-$renderer->renderVertex( $origin );
+// $renderer->renderMesh( $repere, Render::EDGE );
+// $renderer->renderVertex( $origin );
 
 
-$cube = makeColoredCube( 0.0, 0.0, 0.0, 1.0 );
-$M = $T->mult( $RX )->mult( $RY )->mult( $S );
-$cube = $M->transformMesh( $cube );
-$cube = $cam->watchMesh( $cube );
-$renderer->renderMesh( $cube, Render::RASTERIZE );
+// $cube = makeColoredCube( 0.0, 0.0, 0.0, 1.0 );
+// $M = $T->mult( $RX )->mult( $RY )->mult( $S );
+// $cube = $M->transformMesh( $cube );
+// $cube = $cam->watchMesh( $cube );
+// $renderer->renderMesh( $cube, Render::RASTERIZE );
 
 
-$renderer->develop();
+// $renderer->develop();
 
 ?>

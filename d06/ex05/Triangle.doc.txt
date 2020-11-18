@@ -7,4 +7,11 @@ The triangle class constructor is expecting an array with the following keys:
 - ’C’: Vertex of the third point of the triangle, mandatory.
 
 Verbose is available with Triangle::verbose
+
+Public methods:
+
+- getA(): gets the value in A
+- getB(): gets the value in B
+- getC(): gets the value in C
+
 -------------------------------------------------------------------- Triangle ->
