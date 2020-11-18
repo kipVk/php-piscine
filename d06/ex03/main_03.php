@@ -41,9 +41,9 @@ print( 'Or along the OY axis :' . PHP_EOL );
 $RY = new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI_2 ) );
 print( $RY . PHP_EOL . PHP_EOL );
 
-// print( 'Do a barrel roll !' . PHP_EOL );
-// $RZ = new Matrix( array( 'preset' => Matrix::RZ, 'angle' => 2 * M_PI ) );
-// print( $RZ . PHP_EOL . PHP_EOL );
+print( 'Do a barrel roll !' . PHP_EOL );
+$RZ = new Matrix( array( 'preset' => Matrix::RZ, 'angle' => 2 * M_PI ) );
+print( $RZ . PHP_EOL . PHP_EOL );
 
 // print( 'The bad guy now, the projection matrix : 3D to 2D !' . PHP_EOL );
 // print( 'The values are arbitray. We\'ll decipher them in the next exercice.' . PHP_EOL );

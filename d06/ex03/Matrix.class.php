@@ -10,7 +10,7 @@
 		const SCALE 		= "SCALE";
 		const RX 			= "Ox ROTATION";
 		const RY 			= "Oy ROTATION";
-		const RZ 			= "Oy ROTATION";
+		const RZ 			= "Oz ROTATION";
 		
 		public static $verbose = FALSE;
 
@@ -125,6 +125,16 @@
 			$this->_matrix[1][1] = 1;
 			$this->_matrix[2][0] = -1 * sin($info['angle']);
 			$this->_matrix[2][2] = cos($info['angle']);
+			$this->_matrix[3][3] = 1;
+		}
+
+		private function pOzRotation($info)
+		{
+			$this->_matrix[0][0] = cos($info['angle']);;
+			$this->_matrix[0][1] = -1 * sin($info['angle']);
+			$this->_matrix[1][0] = sin($info['angle']);
+			$this->_matrix[1][1] = cos($info['angle']);
+			$this->_matrix[2][2] = 1;
 			$this->_matrix[3][3] = 1;
 		}
 	}
