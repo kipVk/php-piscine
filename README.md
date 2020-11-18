@@ -312,3 +312,17 @@ Daenerys class is modyfying the value of the function resistsFire from the Targa
 # ex03
 An abstract class cannot be instantiated. Abstract methods on a class must be declared on the child. DrHouse class is not declaring al the abstract methods from House, so it will fail.
 
+# ex04 
+Who sleeps with who?
+
+# ex05
+Object interfaces allow you to create code which specifies which methods a class must implement, without having to define how these methods are implemented.
+
+Interfaces are defined in the same way as a class, but with the interface keyword replacing the class keyword and without any of the methods having their contents defined.
+
+So only people with the interface fight will print... Varys doesn't have fight, so it fails.
+
+# ex06
+A fighter has a type and the function fight. Creeples dont have fitht so it will fail.
+The factory checks if the type of soldier has been absorbed (only one time can be absorbed) and then starts fabricating.
+
