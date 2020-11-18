@@ -33,4 +33,6 @@ It contains the following public methods:
 - mult(Matrix $rhs): returns the multiplication of both matrices.
 - transformVertex(Vertex $vtx): returns a new vertex resulting from
 	the tranformation of the vertex by the matrix.
+- transpose(): Returns the transposed matrix, performing a diagonal symetry.
+	X become Y in the array and viceversa.
 ---------------------------------------------------------------------- Matrix ->

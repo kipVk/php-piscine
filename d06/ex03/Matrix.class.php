@@ -196,5 +196,17 @@
 				'z' => $vertz, 'w' => $vertw));
 			return $new_vert;
 		}
+		
+		public function transpose()
+		{
+			$trans = new Matrix(array('preset' => Matrix::IDENTITY,
+				'noPrint' => TRUE));
+			foreach (range(0, 3) as $i)
+			{
+				foreach (range(0, 3) as $j)
+					$trans->_matrix[$i][$j] = $this->_matrix[$j][$i];
+			}
+			return $trans;
+		}
 	}
 ?>
