@@ -206,4 +206,84 @@ https://www.cs.umd.edu/~zwicker/courses/computergraphics/03_Projection.pdf
 Had to convert this to radians, since it was give in degrees. For that has to be multiplied by pi/180
 1 / tan($info['fov'] / 2); => 1 / tan(($info['fov'] / 2 * M_PI / 180));
 
+OR, using deg2rad function actually does this.
+
 With this I obtained the right results!!
+
+On mult I get this matrix array:
+Matrix Object
+(
+    [_array:Matrix:private] => Array
+        (
+            [preset] => IDENTITY
+            [noPrint] => 1
+        )
+
+    [_matrix:Matrix:private] => Array
+        (
+            [0] => Array
+                (
+                    [0] => 1
+                    [1] => 0
+                    [2] => 0
+                    [3] => 20
+                )
+
+            [1] => Array
+                (
+                    [0] => 0
+                    [1] => 0.70710678118655
+                    [2] => -0.70710678118655
+                    [3] => 20
+                )
+
+            [2] => Array
+                (
+                    [0] => 0
+                    [1] => 0.70710678118655
+                    [2] => 0.70710678118655
+                    [3] => 0
+                )
+
+            [3] => Array
+                (
+                    [0] => 0
+                    [1] => 0
+                    [2] => 0
+                    [3] => 1
+                )
+
+        )
+
+    [_crds:Matrix:private] => Array
+        (
+            [0] => x
+            [1] => y
+            [2] => z
+            [3] => w
+        )
+
+)
+
+# ex04 
+Making the camera. Transform the 3D view into a 2D plane
+On the main file provided they construct the camera class like this:
+        $vtxO = new Vertex( array( 'x' => 20.0, 'y' => 20.0, 'z' => 80.0 ) );
+        $R    = new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI ) );
+        $cam  = new Camera( array( 'origin' => $vtxO,
+                'orientation' => $R,
+                'width' => 640,
+                'height' => 480,
+                'fov' => 60,
+                'near' => 1.0,
+                'far' => 100.0) );
+On the assignment it says that $R is a rotation matrix and that $tR is
+calculated basically by transposing the matrix "by doing a
+diagonal symmetry (x become y in the array and vice versa).)"
+
+So we will need to add a transpose function to the Matrix Class.
+
+# ex05
+Generating images finally.
+
+Render and Triangle classes

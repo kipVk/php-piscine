@@ -1,5 +1,8 @@
 <?php
 
+	require_once 'Vertex.class.php';
+	require_once 'Triangle.class.php';
+	
 	class Render
 	{
 		const VERTEX 	= 'VERTEX';
@@ -33,6 +36,21 @@
 		{
 			if (self::$verbose)
 				echo "Render instance destructed" . PHP_EOL;
+		}
+
+		public function renderVertex(Vertex $screenVertex)
+		{
+
+		}
+
+		public function renderTriangle(Triangle $triandle, $mode)
+		{
+
+		}
+
+		public function develop()
+		{
+
 		}
 	}
 ?>

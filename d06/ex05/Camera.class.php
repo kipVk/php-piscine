@@ -71,5 +71,20 @@
 			if (self::$verbose)
 				echo "Camera instance destructed" . PHP_EOL;
 		}
+
+		public function watchVertex($worldVertex)
+		{
+			$vcLocal = new Vector(array('dest' => $worldVertex));
+			$vcOrigin = new Vector(array('dest' => $this->_origin));
+			$vectWorld = $vcOrigin->add($vclocal);
+			$vtx = new Vertex(array('x' => $vectWorld->getX(),
+				'y' => $vectWorld->getY(), 'z' => $vectWorld->getZ()));
+			$vtx = $this->_tRMult->transformVertex($vtx);
+			$newVtx = new Vertex(array(
+					'x' => $vtx->getX() * deg2rad($this->_fov) * $this->_ratio,
+					'y' => $vtx->getY() * deg2rad($this->_fov),
+					'z' => $vtx->getZ(), 'color' => $worldVertex->getColor()));
+			return $newVtx;
+		}
 	}
 ?>
