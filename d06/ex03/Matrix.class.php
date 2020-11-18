@@ -150,5 +150,27 @@
 			$this->_matrix[3][2] = -1;
 			$this->_matrix[3][3] = 0;
 		}
+
+		public function mult($rhs)
+		{
+			$result = array();
+			foreach (range(0, count($this->_matrix) - 1) as $i)
+			{
+				$result[$i] = array();
+				foreach (range(0, count($this->_matrix[$i]) -1) as $j)
+				{
+					$sum = 0;
+					foreach (range(0, count($rhs->_matrix) - 1) as $k)
+					{
+						$sum += $this->_matrix[$i][$k] * $rhs->_matrix[$k][$j];
+					}
+					$result[$i][$j] = $sum;
+				}
+			}
+			$mresult = new Matrix(array('preset' => Matrix::IDENTITY,
+				'noPrint' => TRUE));
+			$mresult->_matrix = $result;
+			return $mresult;
+		}
 	}
 ?>
