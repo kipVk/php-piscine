@@ -296,3 +296,12 @@ Specially this one was useful:
 http://programmerblog.net/manipulate-images-work-gd-library-in-php/
 
 Quit ex05 half way done. Not enough time for me to understand this and do it to the end well enough to match the given image. To get 0 points I'd rather move onto day07
+
+# php-d07
+
+# ex00
+Tyrion.class.php inheriting from Lannister class in test.php file
+
+# ex01
+Make the Greyjoy function so that test1 prints and test2 gives fatal error. Test2 is accessing straight to an attribute of the class Euron, which extends Greyjoy, so making that attribute protected gets it not accessible out of Greyjoy.
+Euron has a proper function to get that value out, so test1 should work.
