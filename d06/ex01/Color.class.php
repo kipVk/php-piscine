@@ -21,7 +21,8 @@
 
 		public function __construct(array $color)
 		{
-			if (!isset($color['rgb']) && (!isset($color['red']) || !isset($color['green']) || !isset($color['blue'])))
+			if (!isset($color['rgb']) && (!isset($color['red'])
+				|| !isset($color['green']) || !isset($color['blue'])))
 				return FALSE;
 			if (isset($color['rgb']))
 			{

@@ -43,7 +43,8 @@
 			if (isset($vert['color']))
 				$this->_color = $vert['color'];
 			else
-				$this->_color = new Color(array('red' => 255, 'green' => 255, 'blue' => 255));
+				$this->_color = new Color(array('red' => 255, 'green' => 255,
+					'blue' => 255));
 			$this->_x = $vert['x'];
 			$this->_y = $vert['y'];
 			$this->_z = $vert['z'];

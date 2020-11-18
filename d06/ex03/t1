@@ -43,4 +43,44 @@ y | 0.00 | 1.00 | 0.00 | 0.00
 z | 0.00 | 0.00 | 1.00 | 0.00
 w | 0.00 | 0.00 | 0.00 | 1.00
 
+So far, so good. Let's create a translation matrix now.
+Matrix TRANSLATION preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 1.00 | 0.00 | 0.00 | 20.00
+y | 0.00 | 1.00 | 0.00 | 20.00
+z | 0.00 | 0.00 | 1.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 1.00
+
+A scale matrix is no big deal.
+Matrix SCALE preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 10.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 10.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 10.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 1.00
+
+A Rotation along the OX axis :
+Matrix RX preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 1.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.71 | -0.71 | 0.00
+z | 0.00 | 0.71 | 0.71 | 0.00
+w | 0.00 | 0.00 | 0.00 | 1.00
+
+Or along the OY axis :
+Matrix RY preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 1.00 | 0.00
+y | 0.00 | 1.00 | 0.00 | 0.00
+z | -1.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 1.00
+
+Matrix instance destructed
+Matrix instance destructed
+Matrix instance destructed
+Matrix instance destructed
 Matrix instance destructed

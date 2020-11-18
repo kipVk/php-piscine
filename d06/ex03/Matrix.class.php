@@ -4,13 +4,15 @@
 
 	class Matrix
 	{
-		const IDENTITY 		= "IDENTITY";
+		const TRANSLATION	= "TRANSLATION";
+		const PROJECTION	= "PROJECTION";
+		const IDENTITY		= "IDENTITY";
 		const SCALE 		= "SCALE";
 		const RX 			= "Ox ROTATION";
 		const RY 			= "Oy ROTATION";
-		const RZ 			= "Oz ROTATION";
-		const TRANSLATION 	= "TRANSLATION";
-		const PROJECTION 	= "PROJECTION";
+		const RZ 			= "Oy ROTATION";
+		
+		public static $verbose = FALSE;
 
 		private $_array;
 
@@ -22,8 +24,6 @@
 			];
 
 		private $_crds = ['x', 'y', 'z', 'w'];
-
-		public static $verbose = FALSE;
 
 		public static function doc()
 		{
@@ -44,37 +44,43 @@
 			return $str;
 		}
 
-		public function __construct(array $array)
+		public function __construct(array $info)
 		{
-			if (!isset($array['preset']) || !in_array($array['preset'], 
+			if (!isset($info['preset']) || !in_array($info['preset'], 
 				[self::IDENTITY, self::SCALE, self::RX, self::RY, 
 				self::RZ, self::TRANSLATION, self::PROJECTION]))
 					return FALSE;
-			if ($array['preset'] === self::SCALE && !isset($array['scale']))
+			if ($info['preset'] === self::SCALE && !isset($info['scale']))
 				return FALSE;
-			if (in_array($array['preset'], [self::RY, self::RX, self::RZ]) 
-				&& !isset($array['angle']))
+			if (in_array($info['preset'], [self::RY, self::RX, self::RZ]) 
+				&& !isset($info['angle']))
 				return FALSE;
-			if ($array['preset'] === self::TRANSLATION
-				&& (!isset($array['vtc']) || !($array['vtc'] instanceof Vector)))
+			if ($info['preset'] === self::TRANSLATION
+				&& (!isset($info['vtc']) || !($info['vtc'] instanceof Vector)))
 				return FALSE;
-			if ($array['preset'] === self::PROJECTION && (!isset($array['fov'])
-				|| !isset($array['ratio']) || !isset($array['near'])
-				|| !isset($array['far'])))
+			if ($info['preset'] === self::PROJECTION && (!isset($info['fov'])
+				|| !isset($info['ratio']) || !isset($info['near'])
+				|| !isset($info['far'])))
 				return FALSE;
 
-			$this->_array = $array;
-			$function = "p" . str_replace(' ', '', ucwords(strtolower($array['preset'])));
-			$this->{$function}($array);
-			if (self::$verbose && !isset($array['silent']))
-				echo "Matrix " . $array['preset'] . 
-					($array['preset'] !== self::IDENTITY ? " preset" : "") .
-					" instance constructed" . PHP_EOL;
+			$this->_array = $info;
+			$function = "p" . str_replace(' ', '',
+				ucwords(strtolower($info['preset'])));
+			$this->{$function}($info);
+			if (self::$verbose && !isset($info['noPrint']))
+			{
+				if ($info['preset'] == self::IDENTITY)
+					echo "Matrix " . $info['preset'] . " instance constructed" .
+					PHP_EOL;
+				else
+					echo "Matrix " . $info['preset'] . " preset" .
+						" instance constructed" . PHP_EOL;
+			}
 		}
 
 		public function __destruct()
 		{
-			if (self::$verbose && !isset($array['silent']))
+			if (self::$verbose && !isset($info['noPrint']))
 				echo "Matrix instance destructed" . PHP_EOL;
 		}
 		
@@ -83,6 +89,42 @@
 			$this->_matrix[0][0] = 1;
 			$this->_matrix[1][1] = 1;
 			$this->_matrix[2][2] = 1;
+			$this->_matrix[3][3] = 1;
+		}
+
+		private function pTranslation($info)
+		{
+			$this->pIdentity();
+			$this->_matrix[0][3] = $info['vtc']->getX();
+			$this->_matrix[1][3] = $info['vtc']->getY();
+			$this->_matrix[2][3] = $info['vtc']->getZ();
+		}
+
+		private function pScale($info)
+		{
+			$this->_matrix[0][0] = $info['scale'];
+			$this->_matrix[1][1] = $info['scale'];
+			$this->_matrix[2][2] = $info['scale'];
+			$this->_matrix[3][3] = 1;
+		}
+
+		private function pOxRotation($info)
+		{
+			$this->_matrix[0][0] = 1;
+			$this->_matrix[1][1] = cos($info['angle']);
+			$this->_matrix[1][2] = -1 * sin($info['angle']);
+			$this->_matrix[2][1] = sin($info['angle']);
+			$this->_matrix[2][2] = cos($info['angle']);
+			$this->_matrix[3][3] = 1;
+		}
+
+		private function pOyRotation($info)
+		{
+			$this->_matrix[0][0] = cos($info['angle']);;
+			$this->_matrix[0][2] = sin($info['angle']);
+			$this->_matrix[1][1] = 1;
+			$this->_matrix[2][0] = -1 * sin($info['angle']);
+			$this->_matrix[2][2] = cos($info['angle']);
 			$this->_matrix[3][3] = 1;
 		}
 	}

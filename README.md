@@ -181,3 +181,19 @@ Matrixes everywhere. Passing a "preset" in the array to create the matrix
 we define in the construct the function that will be used to operate
 or build the matrix. Depending on the preset selected, we are expecting some
 or another keys in the array to be able to perform the operations.
+        Example of array:
+                Array
+                (
+                [preset] => TRANSLATION
+                [vtc] => Vector Object
+                        (
+                        [_x:Vector:private] => 20
+                        [_y:Vector:private] => 20
+                        [_z:Vector:private] => 0
+                        [_w:Vector:private] => 0
+                        )
+
+                )
+https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/opengl-perspective-projection-matrix/
+
+https://en.wikipedia.org/wiki/Rotation_matrix#:~:text=Basic%20rotations,-A%20basic%20rotation&text=The%20following%20three%20basic%20rotation,clockwise%20rotation%20of%20the%20axes.)

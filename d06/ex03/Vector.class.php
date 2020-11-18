@@ -29,11 +29,12 @@
 
 		public function __construct(array $vert)
 		{
-			if ((!isset($vert['dest']) || !($vert['dest'] instanceof Vertex)) || 
-				(isset($vert['orig']) && !($vert['orig'] instanceof Vertex)))
+			if ((!isset($vert['dest']) || !($vert['dest'] instanceof Vertex))
+				|| (isset($vert['orig']) && !($vert['orig'] instanceof Vertex)))
 				return FALSE;
 			if (!isset($vert['orig']))
-				$vert['orig'] = new Vertex(array('x' => 0.0, 'y' => 0.0, 'z' => 0.0));
+				$vert['orig'] = new Vertex(array('x' => 0.0, 'y' => 0.0,
+					'z' => 0.0));
 			$this->_x = $vert['dest']->getX() - $vert['orig']->getX();
 			$this->_y = $vert['dest']->getY() - $vert['orig']->getY();
 			$this->_z = $vert['dest']->getZ() - $vert['orig']->getZ();
