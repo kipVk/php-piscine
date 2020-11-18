@@ -49,17 +49,13 @@
 			$this->_y = $vert['y'];
 			$this->_z = $vert['z'];
 			if (self::$verbose)
-			{
 				echo $this->__toString() . " constructed" . PHP_EOL;
-			}
 		}
 
 		public function __destruct()
 		{
 			if (self::$verbose)
-			{
 				echo $this->__toString() . " destructed" . PHP_EOL;
-			}
 		}
 
 		public function setX($newx)

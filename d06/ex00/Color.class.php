@@ -49,26 +49,26 @@
 		
 		public function add(Color $color)
 		{
-			return new Color([
-				'red' => $this->red + $color->red,
+			$newColor = new Color(['red' => $this->red + $color->red,
 				'green' => $this->green + $color->green,
 				'blue' => $this->blue + $color->blue]);
+			return $newColor;
 		}
 
 		public function sub(Color $color)
 		{
-			return new Color([
-				'red' => $this->red - $color->red,
+			$newColor = new Color(['red' => $this->red - $color->red,
 				'green' => $this->green - $color->green,
 				'blue' => $this->blue - $color->blue]);
+			return $newColor;
 		}
 
 		public function mult($factor)
 		{
-			return new Color([
-				'red' => $this->red * $factor,
+			$newColor = new Color(['red' => $this->red * $factor,
 				'green' => $this->green * $factor,
 				'blue' => $this->blue * $factor]);
+			return $newColor;
 		}
 	}
 ?>

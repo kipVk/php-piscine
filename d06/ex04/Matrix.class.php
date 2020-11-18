@@ -162,9 +162,7 @@
 				{
 					$sum = 0;
 					foreach (range(0, count($rhs->_matrix) - 1) as $k)
-					{
 						$sum += $this->_matrix[$i][$k] * $rhs->_matrix[$k][$j];
-					}
 					$result[$i][$j] = $sum;
 				}
 			}
@@ -192,9 +190,9 @@
 				$vtx->getY() * $this->_matrix[3][1] +
 				$vtx->getZ() * $this->_matrix[3][2] +
 				$vtx->getW() * $this->_matrix[3][3];
-			$new_vert = new Vertex(array('x' => $vertx, 'y' => $verty, 
+			$newVert = new Vertex(array('x' => $vertx, 'y' => $verty, 
 				'z' => $vertz, 'w' => $vertw));
-			return $new_vert;
+			return $newVert;
 		}
 		
 		public function transpose()

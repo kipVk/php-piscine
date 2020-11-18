@@ -53,10 +53,10 @@
 			$x = $this->_origin->getX() * -1;
 			$y = $this->_origin->getY() * -1;
 			$z = $this->_origin->getZ() * -1;
-			$i_vertex = new Vertex(array('x' => $x, 'y' => $y, 'z' => $z));
-			$i_vector = new Vector(array('dest' => $i_vertex));
+			$invVertex = new Vertex(array('x' => $x, 'y' => $y, 'z' => $z));
+			$invVector = new Vector(array('dest' => $invVertex));
 			$this->_tT  = new Matrix(array('preset' => Matrix::TRANSLATION,
-				'vtc' => $i_vector));
+				'vtc' => $invVector));
 			$this->_tR = $info['orientation']->transpose();
 			$this->_tRMult = $this->_tR->mult($this->_tT);
 			$this->_proj = new Matrix(array('preset' => Matrix::PROJECTION,
