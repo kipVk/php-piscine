@@ -4,37 +4,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Calculator</title>
 		<style>
-			
-			#op
+			body
 			{
-				background-color: #bdbdbd;;
-				width: 40px;
-				height: 25px;
-				border-radius: 5px;
-				text-align:center;
-				color: #505050;
-			}
-			input[type=text]
-			{
-				background-color: #bdbdbd;
-				color: #505050;
-				width: 100px;
-				height: 20px;
-				border-radius: 5px;
+				font-family: Arial;
+				background-color: rgb(57, 59, 63);
+				color: white;
 			}
 			button
 			{
-				background-color: #bdbdbd;;
-				color: #505050;
-				width: 90px;
-				height: 30px;
-				border-radius: 5px;
-				margin-top: 10px;
+				background-color: rgb(92, 97, 107);
+				width: 100%;
+				color: white;
+				padding: 10px;
+				margin: 10px 0;
+				border: none;
+				cursor: pointer;
+				border-radius: 3px;
 			}
-			#calc
+			.calc
 			{
-				text-align:center;
-				max-width: 300px;
+				border-radius: 3px;
+				width: 250px;
+				margin: 0 auto;
+			}
+			input[type=text]
+			{
+				width: 100%;
+				margin: 10px 0;
+				padding: 10px 20px;
+				display: inline-block;
+				border: 1px solid #61666b;
+				box-sizing: border-box;
+				border-radius: 3px;
+			}
+			button:hover
+			{
+				opacity: 0.7;
+			}
+			#op
+			{
+				font-size: 100%;
+				width: 22%;
+				padding: 10px 10px;
+				border: 1px solid #61666b;
+				box-sizing: border-box;
+				border-radius: 3px;
+				text-align: center;
+				display: block;
+				margin: 0 auto;
 			}
 		</style>
 		<script type="text/javascript">
@@ -56,9 +73,11 @@
 				var left = document.getElementById("left").value;
 				var right = document.getElementById("right").value;
 				var op = document.getElementById("op").value;
-				if (left < 0 || right < 0)
+				var numbers = /^[0-9]+$/;
+				if(!left.match(numbers) || !right.match(numbers) || left < 0
+					|| right < 0)
 					result("Error :(");
-				if (right == 0 && (op == "/" || op == "%"))
+				else if (right == 0 && (op == "/" || op == "%"))
 					result("It's over 9000!");
 				else
 					result(eval(left+op+right));
@@ -66,7 +85,8 @@
 		</script>
 	</head>
 	<body>
-		<div id="calc">
+		<center> <h1>Mini Calculator</h1> </center>
+		<div class="calc">
 			<input type="text" id="left" value="" />
 			<select id="op">
 				<option value="+">+</option>
@@ -76,7 +96,6 @@
 				<option value="%">%</option>
 			</select>
 			<input type="text" id="right" value="" />
-			<br/>
 			<button onclick="calc()">Try me!</button>
 		</div>
 	</body>

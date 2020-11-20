@@ -15,7 +15,8 @@
 			var colors = Array("red", "green", "blue");
 			var count = 0;
 
-			function inflate(balloon) {
+			function inflate(balloon)
+			{
 				var size = balloon.offsetWidth;
 				size = size + 10;
 				count++;
@@ -27,8 +28,8 @@
 				balloon.style.width = size + "px";
 				balloon.style.height = size + "px";
 			}
-
-			function deflate(balloon) {
+			function deflate(balloon)
+			{
 				var size = balloon.offsetWidth;
 				size = size - 5;
 				count--;
