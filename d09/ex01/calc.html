@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculator</title>
+		<style>
+			
+			#op
+			{
+				background-color: #bdbdbd;;
+				width: 40px;
+				height: 25px;
+				border-radius: 5px;
+				text-align:center;
+				color: #505050;
+			}
+			input[type=text]
+			{
+				background-color: #bdbdbd;
+				color: #505050;
+				width: 100px;
+				height: 20px;
+				border-radius: 5px;
+			}
+			button
+			{
+				background-color: #bdbdbd;;
+				color: #505050;
+				width: 90px;
+				height: 30px;
+				border-radius: 5px;
+				margin-top: 10px;
+			}
+			#calc
+			{
+				text-align:center;
+				max-width: 300px;
+			}
+		</style>
+		<script type="text/javascript">
+			var callback_time = setInterval(callback, 30000);
+
+			function callback()
+			{
+				alert("Please, use me...");
+			}
+
+			function result(msg)
+			{
+				alert(msg);
+				console.log(msg);
+			}
+
+			function calc()
+			{
+				var left = document.getElementById("left").value;
+				var right = document.getElementById("right").value;
+				var op = document.getElementById("op").value;
+				if (left < 0 || right < 0)
+					result("Error :(");
+				if (right == 0 && (op == "/" || op == "%"))
+					result("It's over 9000!");
+				else
+					result(eval(left+op+right));
+			}
+		</script>
+	</head>
+	<body>
+		<div id="calc">
+			<input type="text" id="left" value="" />
+			<select id="op">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type="text" id="right" value="" />
+			<br/>
+			<button onclick="calc()">Try me!</button>
+		</div>
+	</body>
+</html>
