@@ -411,3 +411,5 @@ How to make cookies: https://www.w3schools.com/js/js_cookies.asp
 
 # ex03
 Repeat ex00, ex01 and ex02 but with jquery
+https://developer.yahoo.com/performance/rules.html?guccounter=1
+I put the code at the end
