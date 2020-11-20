@@ -403,3 +403,9 @@ Decided to use eval because the operands are not user introduced but selected so
 
 # ex02
 To do list.
+You can't create dialog box with yes or no buttons https://www.google.com/search?ei=4sK3X4HTAcSSwPAPt_e2sAk&q=javascript+dialog+box+with+yes+no+buttons&oq=javascript+dialog+box+with+yes+no&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgQIABBHOggIABDJAxCRAjoFCAAQkQI6BAgAEEM6AggAOgcIABDJAxBDUK34BVickgZglJkGaABwAngAgAGdAYgBhBCSAQQxNy41mAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab
+
+so it will have to do with confirm.
+
+How to make cookies: https://www.w3schools.com/js/js_cookies.asp
+
