@@ -409,3 +409,5 @@ so it will have to do with confirm.
 
 How to make cookies: https://www.w3schools.com/js/js_cookies.asp
 
+# ex03
+Repeat ex00, ex01 and ex02 but with jquery
