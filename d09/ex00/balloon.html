@@ -4,12 +4,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Balloon</title>
 		<style>
-			#balloon
-			{
+			#balloon {
 				background-color: red;
 				width: 200px;
 				height: 200px;
-				color: white;
 				border-radius: 50%;
 			}
 		</style>
@@ -17,14 +15,31 @@
 			var colors = Array("red", "green", "blue");
 			var count = 0;
 
-			function inflate(balloon)
-			{
+			function inflate(balloon) {
+				var size = balloon.offsetWidth;
+				size = size + 10;
 				count++;
 				if (count > 2)
 					count = 0;
 				balloon.style.background = colors[count];
+				if (size > 420)
+					size = 200;
+				balloon.style.width = size + "px";
+				balloon.style.height = size + "px";
 			}
 
+			function deflate(balloon) {
+				var size = balloon.offsetWidth;
+				size = size - 5;
+				count--;
+				if (count < 0)
+					count = 2;
+				balloon.style.background = colors[count];
+				if (size < 200)
+					size = 200;
+				balloon.style.width = size + "px";
+				balloon.style.height = size + "px";
+			}
 		</script>
 	</head>
 	<body>
