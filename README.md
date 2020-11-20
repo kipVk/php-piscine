@@ -326,3 +326,72 @@ So only people with the interface fight will print... Varys doesn't have fight, 
 A fighter has a type and the function fight. Creeples dont have fitht so it will fail.
 The factory checks if the type of soldier has been absorbed (only one time can be absorbed) and then starts fabricating.
 
+# php-d08
+
+# ex00
+Warhammer 4000 kind of game.
+
+Rules:
+Dice: Using ordinary 6 face dice.
+Game Zone: - grid 150 by 100
+        - Both fleets start from opposite corners and the ships are stationary.
+        - there has to be obstacles blocking movements to encourage maneuvers. 5 or 6 obstacles of 10 cells each will do.
+        - No need for them to be random.
+        - Ship that leaves the area or hits an obstacle is eliminated.
+Turns: - Players use their ships one after the other untill all have played.
+        - when one plays with a ship it "activates it"
+        - One ship can be activated just once per turn
+        - Cannot be deactivated once activated.
+        - Active ship must do in this order:
+                - Instruction phase
+                - movement phase
+                - Shoot phase
+        - When all ships of all players hve been activated, next turn starts.
+Spaceships: It has different features
+        - Name: should be baddass. 
+        - Size: 3x10 is a big admiral ship. 1x2 is a small scout. average is 1x4 cells.
+        - Sprite or equivalent: Representation on the grid.
+        - Hull points: Life points. if they are 0 the ship is destroyed. 5 points is a good average for a mid size ship.
+        - Engine power: Points that will be possible to assign to each ship activation to adapt to a situation. Power points. PP. Can be used to move faster, to boost shields, or power the weapons. It's done during the order phase. 10 pps is an average for a base ship. bigger ships can go up to 15pps.
+        - Speed: Max cells it can move per turn. It can be increased using PP. A scout is faster can move 20 cells. Big ship only 10.
+        - Handling: number of cells that a spaceship that has moved in the previous round must travel straight during the current round if it wants to stay still during the next round. Inertia. Minimum number of cells a spacecraft must travel straight before it can make a right or left turn AND between turns. A stationary ship can make one free turn before starting to move again at the begining of the movement phase. Scout has handling of 2 or 3. A big ship would have 5.
+        - Shield: Damage points it can endure before losing hull points. It's 0 upon activation and it can receive some pp.
+        - Weapons: List of weapons, one or two, sometimes more for really big ships. Needs pp to work. Each pp will allow to raise efficiency factor for the round.
+
+Phases:
+Orders phase:
+        At the begining all the pp spent on the previous round are back to 0.
+        The player spends the spaceship PP on any of the systems. All, some or none.
+        - 1pp spent on speed allows to move 1d6 extra cell.
+        - 1pp on shields give 1 shield point.
+        - 1pp spent on weapons gives one more 1D6 to shoot.
+        It can also go to repair the ships. It has to be stationary. Each pp spent in repairs is 1d6 6 will get the hull points to the max.
+Movement phase:
+        - Ship moves. A turn can be rotating the ship 90 degrees to right or left.
+        - Turns around the most central cell that compose it.
+        - Stationary ship can do a free turn before moving again.
+        - Ship can only move cerain number of cells depending on speed and pp added to it.
+        - Must move to equal or superior amount of cells matching the handling characteristics.
+        - If during the previous round it has already moved those, it can stay still for this round.
+        - It can stay still indefinitely.
+        - It can move less than the handling if it was stationary, but then it wont be for the next turn.
+        - It can turn again if it has moved a bigger or equal number of cells than the handling.
+        - If a ship hits another, it will stop and cannot move or shoot for that round. It is stationary for the next round. If it moved more than the handling it will receive damage points equal to the number of hull points that the other ship had before the impact. It can be absorbed by shield points. (buccaneering).
+        - A ship that goes out of the grid or hits an obstacle is eliminated.
+Shooting phase: Every werapon has a profile:
+        - Charge: Initially 0 upon activation. Each pp spent adds one charge point. Each charge gives 1d6 for teh shooting. some weapons have a number of charge points already.
+        - Short Range: Number of cells the weapon can reach at short range.
+        - Middle Range: Number of cells the weapon can reach middle range.
+        - Long range: number of cells the weapon can reach at long range. Max range.
+        - Effect zone: description of cells on wich the weapon can shoot.
+
+        To shoot the ship has to have a clear view of the target. We need to trace a line between the shooter and the target without any obstacle. If the shoot is aquired, the ship throws a number of dice equal to the number of charge points. The target must be within the effect zone and range. Dice with a certain value are success. Values are:
+                - Short Range 4+
+                - Middle range 5+
+                - Long range 6
+        Read more on the pdf because I refuse to transcribe more.
+
+
+# php-d09
+
+

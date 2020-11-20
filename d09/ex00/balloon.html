@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Balloon</title>
+		<style>
+			#balloon
+			{
+				background-color: red;
+				width: 200px;
+				height: 200px;
+				color: white;
+				border-radius: 50%;
+			}
+		</style>
+		<script type="text/javascript">
+			var colors = Array("red", "green", "blue");
+			var count = 0;
+
+			function inflate(balloon)
+			{
+				count++;
+				if (count > 2)
+					count = 0;
+				balloon.style.background = colors[count];
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id="balloon" onclick="inflate(this)" onmouseleave="deflate(this)">
+		</div>
+	</body>
+</html>
