@@ -400,3 +400,6 @@ Inflate and deflate a balloon with javascript
 # ex01
 Calculator
 Decided to use eval because the operands are not user introduced but selected so there's no risk to get malicious code.
+
+# ex02
+To do list.
