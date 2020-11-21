@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculator</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/
+			jquery.min.js"></script>
+		<style>
+			body
+			{
+				font-family: Arial;
+				background-color: rgb(57, 59, 63);
+				color: white;
+			}
+			button
+			{
+				background-color: rgb(92, 97, 107);
+				width: 100%;
+				color: white;
+				padding: 10px;
+				margin: 10px 0;
+				border: none;
+				cursor: pointer;
+				border-radius: 3px;
+			}
+			.container
+			{
+				border-radius: 3px;
+				width: 250px;
+				margin: 0 auto;
+			}
+			.todo_elem
+			{
+				width: 100%;
+				margin: 5px 0;
+				padding: 5px 10px;
+				display: inline-block;
+				border: 1px solid #61666b;
+				box-sizing: border-box;
+				border-radius: 3px;
+			}
+			button:hover
+			{
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<center> <h1>To do list</h1> </center>
+		<div class="container">
+			<button id="new_todo_btn">New</button>
+			<div id="ft_list"></div>
+		</div>
+	</body>
+	<script src="todo.js"></script>
+</html>
