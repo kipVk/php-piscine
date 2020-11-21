@@ -413,3 +413,13 @@ How to make cookies: https://www.w3schools.com/js/js_cookies.asp
 Repeat ex00, ex01 and ex02 but with jquery
 https://developer.yahoo.com/performance/rules.html?guccounter=1
 I put the code at the end
+
+# ex04
+Modify previous exercise so that the backup system works with an online csv backup and not through cookies. CSV format: id;content of the todo
+
+Has to be done with AJAX, html shouldn't be refreshed.
+- select.php file gets the TODO list from the csv
+- insert.php file adds a TODO element to the csv
+- delete.php file removes a TODO element from the csv
+
+All the actions to the list will be transferred to the csv file using AJAX.
