@@ -5,7 +5,8 @@
 		foreach($lines as $line)
 		{
 			list($id, $val) = explode(';', $line);
-			$todo[$id] = $val;
+			if (isset($id) && isset($val))
+				$todo[$id] = $val;
 		}
 		echo json_encode($todo);
 	}
