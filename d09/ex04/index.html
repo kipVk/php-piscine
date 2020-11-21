@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Calculator</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/
@@ -38,6 +39,15 @@
 				border: 1px solid #61666b;
 				box-sizing: border-box;
 				border-radius: 3px;
+			}
+			.todo_elem:hover{
+				opacity: 0.7;
+			}
+			.todo_elem:hover:after{
+				content:'x';
+				position:inherit;
+				padding-left: 9px;
+				color: white;
 			}
 			button:hover
 			{
