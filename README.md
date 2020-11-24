@@ -5,7 +5,6 @@
 ![lang-list](https://badgen.net/badge/Tech%20used/PHP%20%7C%20html%20%7C%20CCSS%20%7C%20MySql%20%7C%20JavaScript%20%7C%20JQuery%20%7C%20AJAX/blue?icon=jsdelivr)
 ![top-lang](https://img.shields.io/github/languages/top/kipVk/php-piscine)
 ![lines](https://img.shields.io/tokei/lines/github.com/kipVk/php-piscine)
-![commits](https://img.shields.io/github/commit-activity/m/kipVk/php-piscine)
 ![last-commit](https://img.shields.io/github/last-commit/kipVk/php-piscine)
 
 Hive PHP 2 weeks bootcamp.
@@ -13,7 +12,7 @@ Languages and libraries used:
 - PHP
 - HTML
 - CSS
-- MySql
+- MySQL
 - JavaScript
 - JQuery
 - AJAX
