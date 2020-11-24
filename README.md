@@ -1,6 +1,6 @@
 # PHP Piscine
 
-![grade](/rsc/grade.png =100x)
+![grade](/rsc/grade.png | width=100)
 
 ![lang](https://img.shields.io/github/languages/count/kipVk/php-piscine)
 ![lang-list](https://badgen.net/badge/Tech%20used/PHP%20%7C%20html%20%7C%20CCSS%20%7C%20MySql%20%7C%20JavaScript%20%7C%20JQuery%20%7C%20AJAX/blue?icon=jsdelivr)
@@ -43,16 +43,16 @@ Languages and libraries used:
 # Day 00
 ### ex00
 basics.html page with pink background and links to 2 online shops.
-![d00_ex00](/rsc/d00_ex00.png =100x)
+![d00_ex00](/rsc/d00_ex00.png | width=100)
 
 ### ex01
 Mendeleyév periodic table page
-![d00_ex01](/rsc/d00_ex01.png =100x)
+![d00_ex01](/rsc/d00_ex01.png | width=100)
 
 ### ex02
 Day of 42 game page (copying exactly the image given using photoshop to measure). The assignment asks to use all the images, which includes the reference one. Now, I am assuming what was asked is to use the reference as a background and position all the elements on top of it. Since I am not evaluating this day00 and I believe this instruction is pure torture, I won´t redo the exercise just for that. I´d rather move on with the learning.
 
-![d00_ex02](/rsc/d00_ex02.png =100x)
+![d00_ex02](/rsc/d00_ex02.png | width=100)
 
 ### ex03
 Responsive Mendeléyev periodic table
@@ -60,7 +60,7 @@ Responsive Mendeléyev periodic table
 ### ex04
 Dropdowns menu exercise
 
-![d00_ex04](/rsc/d00_ex04.png =100x)
+![d00_ex04](/rsc/d00_ex04.png | width=100)
 
 # Day 01
 ### ex00
@@ -191,7 +191,7 @@ Authentication various scripts
 ### ex04
 42 chat room with multiusers.
 
-![d04_ex04](/rsc/d04_ex04.png =100x)![d04_ex04c](/rsc/d04_ex04c.png =100x)![d04_ex04p](/rsc/d04_ex04p.png =100x)
+![d04_ex04](/rsc/d04_ex04.png | width=100)![d04_ex04c](/rsc/d04_ex04c.png | width=100)![d04_ex04p](/rsc/d04_ex04p.png | width=100)
 
 # Day 05
 All MySQL queries
@@ -415,13 +415,13 @@ Read more on the pdf because I refuse to transcribe more.
 ### ex00
 Inflate and deflate a balloon with javascript
 
-![d09_ex00](/rsc/d09_ex00.png =100x)
+![d09_ex00](/rsc/d09_ex00.png | width=100)
 
 ### ex01
 Calculator
 Decided to use eval because the operands are not user introduced but selected so there´s no risk to get malicious code.
 
-![d09_ex01](/rsc/d09_ex01.png =100x)
+![d09_ex01](/rsc/d09_ex01.png | width=100)
 
 ### ex02
 To do list.
@@ -431,7 +431,7 @@ so it will have to do with confirm.
 
 How to make cookies: https://www.w3schools.com/js/js_cookies.asp
 
-![d09_ex02](/rsc/d09_ex02.png =100x)
+![d09_ex02](/rsc/d09_ex02.png | width=100)
 
 ### ex03
 Repeat ex00, ex01 and ex02 but with jquery
