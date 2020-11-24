@@ -227,13 +227,13 @@ or another keys in the array to be able to perform the operations.
 
 Example of array:
 
-			Array(
-				[preset] => TRANSLATION
-				[vtc] => Vector Object(
-					[_x:Vector:private] => 20
-					[_y:Vector:private] => 20
-					[_z:Vector:private] => 0
-					[_w:Vector:private] => 0))
+        Array(
+                [preset] => TRANSLATION
+                [vtc] => Vector Object(
+                        [_x:Vector:private] => 20
+                        [_y:Vector:private] => 20
+                        [_z:Vector:private] => 0
+                        [_w:Vector:private] => 0))
 					
 https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/opengl-perspective-projection-matrix/
 
