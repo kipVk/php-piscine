@@ -29,15 +29,17 @@ Languages and libraries used:
 
 
 **Table of Contents**
-[- Day 00](#Day 00)
-[- Day 01](#Day 01)
-[- Day 02](#Day 02)
-[- Day 03](#Day 03)
-[- Day 04](#Day 04)
-[- Day 05](#Day 05)
-[- Day 06](#Day 06)
-[- Day 07](#Day 07)
-[- Day 09](#Day 09)
+<!--ts-->
+* [Day 00](#Day 00)
+* [Day 01](#Day 01)
+* [Day 02](#Day 02)
+* [Day 03](#Day 03)
+* [Day 04](#Day 04)
+* [Day 05](#Day 05)
+* [Day 06](#Day 06)
+* [Day 07](#Day 07)
+* [Day 09](#Day 09)
+<!--te-->
 
 # Day 00
 ### ex00
