@@ -1,6 +1,5 @@
 # PHP Piscine
-
-![grade](/rsc/grade.png | width=100)
+<img src="/rsc/grade.png" alt="grade" width="100">
 
 ![lang](https://img.shields.io/github/languages/count/kipVk/php-piscine)
 ![lang-list](https://badgen.net/badge/Tech%20used/PHP%20%7C%20html%20%7C%20CCSS%20%7C%20MySql%20%7C%20JavaScript%20%7C%20JQuery%20%7C%20AJAX/blue?icon=jsdelivr)
