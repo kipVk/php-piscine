@@ -30,15 +30,15 @@ Languages and libraries used:
 
 **Table of Contents**
 <!--ts-->
-* [Day 00](#Day 00)
-* [Day 01](#Day 01)
-* [Day 02](#Day 02)
-* [Day 03](#Day 03)
-* [Day 04](#Day 04)
-* [Day 05](#Day 05)
-* [Day 06](#Day 06)
-* [Day 07](#Day 07)
-* [Day 09](#Day 09)
+* [Day 00](#day-00)
+* [Day 01](#day-01)
+* [Day 02](#day-02)
+* [Day 03](#day-03)
+* [Day 04](#day-04)
+* [Day 05](#day-05)
+* [Day 06](#day-06)
+* [Day 07](#day-07)
+* [Day 09](#day-09)
 <!--te-->
 
 # Day 00
