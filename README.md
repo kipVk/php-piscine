@@ -6,6 +6,7 @@
 ![top-lang](https://img.shields.io/github/languages/top/kipVk/php-piscine)
 ![lines](https://img.shields.io/tokei/lines/github.com/kipVk/php-piscine)
 ![commits](https://img.shields.io/github/commit-activity/m/kipVk/php-piscine)
+![last-commit](https://img.shields.io/github/last-commit/kipVk/php-piscine)
 
 Hive PHP 2 weeks bootcamp.
 Languages and libraries used:
