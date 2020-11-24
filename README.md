@@ -19,19 +19,26 @@ Languages and libraries used:
 - AJAX
 
 #### Grades ####
-**Day 01** 67/100
-**Day 02** 60/100
-**Day 03** 100/100
-**Day 04** 100/100
-**Day 05** 110/100
-**Day 06** 68/100
-**Day 07** 100/100
-**Day 09** 100/100
+* **Day 01** 67/100
+* **Day 02** 60/100
+* **Day 03** 100/100
+* **Day 04** 100/100
+* **Day 05** 110/100
+* **Day 06** 68/100
+* **Day 07** 100/100
+* **Day 09** 100/100
 
 
 **Table of Contents**
-
-[TOCM]
+[- Day 00](#Day 00)
+[- Day 01](#Day 01)
+[- Day 02](#Day 02)
+[- Day 03](#Day 03)
+[- Day 04](#Day 04)
+[- Day 05](#Day 05)
+[- Day 06](#Day 06)
+[- Day 07](#Day 07)
+[- Day 09](#Day 09)
 
 # Day 00
 ### ex00
